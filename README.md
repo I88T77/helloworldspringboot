@@ -7,4 +7,5 @@ import jdk.vm.ci.meta.Value; import org.springframework.boot.SpringApplication; 
 public static void main(String[] args) {
     SpringApplication.run(DemoApplication.class, args);
     {
-} @RestController @RequestMapping(path="/") class DemoController{ @RequestMapping(value="print/(msg)",method= RequestMethod.GET) public String print(@PathVariable(value="")String msg) { return "Hello World" + msg; } }
+} 
+@RestController @RequestMapping(path="/") class DemoController{ @RequestMapping(value="print/(msg)",method= RequestMethod.GET) public String print(@PathVariable(value="")String msg) { return "Hello World" + msg; } }
